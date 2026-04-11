@@ -47,7 +47,11 @@ return [
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url((string) env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
+=======
+            'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url(env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
             'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url(env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -90,7 +94,10 @@ return [
                 'log',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'retry_after' => 60,
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
         ],
@@ -102,7 +109,10 @@ return [
                 'postmark',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'retry_after' => 60,
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
         ],
@@ -123,7 +133,11 @@ return [
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
 <<<<<<< HEAD
+<<<<<<< HEAD
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Laravel')),
+=======
+        'name' => env('MAIL_FROM_NAME', 'Example'),
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
         'name' => env('MAIL_FROM_NAME', 'Example'),
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

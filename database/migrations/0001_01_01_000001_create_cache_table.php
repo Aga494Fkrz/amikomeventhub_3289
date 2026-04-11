@@ -15,7 +15,11 @@ return new class extends Migration
             $table->string('key')->primary();
             $table->mediumText('value');
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->integer('expiration')->index();
+=======
+            $table->integer('expiration');
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
             $table->integer('expiration');
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -25,7 +29,11 @@ return new class extends Migration
             $table->string('key')->primary();
             $table->string('owner');
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->integer('expiration')->index();
+=======
+            $table->integer('expiration');
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
             $table->integer('expiration');
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

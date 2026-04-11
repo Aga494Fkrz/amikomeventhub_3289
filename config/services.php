@@ -16,11 +16,15 @@ return [
 
     'postmark' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'key' => env('POSTMARK_API_KEY'),
     ],
 
     'resend' => [
         'key' => env('RESEND_API_KEY'),
+=======
+        'token' => env('POSTMARK_TOKEN'),
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
         'token' => env('POSTMARK_TOKEN'),
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -33,11 +37,17 @@ return [
     ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
     'resend' => [
         'key' => env('RESEND_KEY'),
     ],
 
+<<<<<<< HEAD
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
+=======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
     'slack' => [
         'notifications' => [

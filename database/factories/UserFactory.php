@@ -3,7 +3,10 @@
 namespace Database\Factories;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Models\User;
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -12,7 +15,11 @@ use Illuminate\Support\Str;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @extends Factory<User>
+=======
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

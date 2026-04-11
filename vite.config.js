@@ -11,11 +11,14 @@ export default defineConfig({
         tailwindcss(),
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
         },
     },
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 });

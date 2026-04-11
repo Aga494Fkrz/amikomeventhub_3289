@@ -1,8 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Models\User;
 
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 return [
@@ -68,7 +71,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'model' => env('AUTH_MODEL', User::class),
+=======
+            'model' => env('AUTH_MODEL', App\Models\User::class),
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
             'model' => env('AUTH_MODEL', App\Models\User::class),
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -114,7 +121,11 @@ return [
     |--------------------------------------------------------------------------
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Here you may define the number of seconds before a password confirmation
+=======
+    | Here you may define the amount of seconds before a password confirmation
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     | Here you may define the amount of seconds before a password confirmation
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

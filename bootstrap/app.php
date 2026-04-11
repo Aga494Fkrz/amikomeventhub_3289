@@ -11,15 +11,21 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->withMiddleware(function (Middleware $middleware): void {
         //
     })
     ->withExceptions(function (Exceptions $exceptions): void {
 =======
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
     ->withMiddleware(function (Middleware $middleware) {
         //
     })
     ->withExceptions(function (Exceptions $exceptions) {
+<<<<<<< HEAD
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
+=======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
         //
     })->create();

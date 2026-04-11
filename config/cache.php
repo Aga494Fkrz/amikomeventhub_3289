@@ -28,8 +28,12 @@ return [
     |
     | Supported drivers: "array", "database", "file", "memcached",
 <<<<<<< HEAD
+<<<<<<< HEAD
     |                    "redis", "dynamodb", "octane",
     |                    "failover", "null"
+=======
+    |                    "redis", "dynamodb", "octane", "null"
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     |                    "redis", "dynamodb", "octane", "null"
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -96,6 +100,7 @@ return [
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'failover' => [
             'driver' => 'failover',
             'stores' => [
@@ -104,6 +109,8 @@ return [
             ],
         ],
 
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
     ],
@@ -120,7 +127,11 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'prefix' => env('CACHE_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-cache-'),
+=======
+    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

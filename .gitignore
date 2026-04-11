@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *.log
 .DS_Store
 .env
@@ -16,6 +17,9 @@
 =======
 /.phpunit.cache
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
+=======
+/.phpunit.cache
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 /node_modules
 /public/build
 /public/hot
@@ -24,10 +28,13 @@
 /storage/pail
 /vendor
 <<<<<<< HEAD
+<<<<<<< HEAD
 Homestead.json
 Homestead.yaml
 Thumbs.db
 =======
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 .env
 .env.backup
 .env.production
@@ -43,4 +50,7 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+<<<<<<< HEAD
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
+=======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

@@ -25,8 +25,12 @@ return [
     | each backend supported by Laravel. You're also free to add more.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Drivers: "sync", "database", "beanstalkd", "sqs", "redis",
     |          "deferred", "background", "failover", "null"
+=======
+    | Drivers: "sync", "database", "beanstalkd", "sqs", "redis", "null"
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     | Drivers: "sync", "database", "beanstalkd", "sqs", "redis", "null"
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -78,6 +82,7 @@ return [
         ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         'deferred' => [
             'driver' => 'deferred',
         ],
@@ -94,6 +99,8 @@ return [
             ],
         ],
 
+=======
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
     ],

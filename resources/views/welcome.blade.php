@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <title>{{ config('app.name', 'Laravel') }}</title>
+=======
+        <title>Laravel</title>
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
         <title>Laravel</title>
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

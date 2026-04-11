@@ -14,8 +14,13 @@ return [
     | persist session data. Database storage is a great default choice.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "file", "cookie", "database", "memcached",
     |            "redis", "dynamodb", "array"
+=======
+    | Supported: "file", "cookie", "database", "apc",
+    |            "memcached", "redis", "dynamodb", "array"
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "dynamodb", "array"
@@ -103,7 +108,11 @@ return [
     | between requests. This must match one of your defined cache stores.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Affects: "dynamodb", "memcached", "redis"
+=======
+    | Affects: "apc", "dynamodb", "memcached", "redis"
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     | Affects: "apc", "dynamodb", "memcached", "redis"
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -139,7 +148,11 @@ return [
     'cookie' => env(
         'SESSION_COOKIE',
 <<<<<<< HEAD
+<<<<<<< HEAD
         Str::slug((string) env('APP_NAME', 'laravel')).'-session'
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
         Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
@@ -166,7 +179,11 @@ return [
     | This value determines the domain and subdomains the session cookie is
     | available to. By default, the cookie will be available to the root
 <<<<<<< HEAD
+<<<<<<< HEAD
     | domain without subdomains. Typically, this shouldn't be changed.
+=======
+    | domain and all subdomains. Typically, this shouldn't be changed.
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
     | domain and all subdomains. Typically, this shouldn't be changed.
 >>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d

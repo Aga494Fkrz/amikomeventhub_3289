@@ -3,8 +3,14 @@
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 <<<<<<< HEAD
+<<<<<<< HEAD
 @source '../**/*.blade.php';
 @source '../**/*.js';
+=======
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
 =======
 @source "../**/*.blade.php";
 @source "../**/*.js";
