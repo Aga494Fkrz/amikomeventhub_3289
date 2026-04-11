@@ -1,0 +1,46 @@
+<<<<<<< HEAD
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+=======
+/.phpunit.cache
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+<<<<<<< HEAD
+Homestead.json
+Homestead.yaml
+Thumbs.db
+=======
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+>>>>>>> 6cbe6e64ea295590b9ddd9aea98fc5d30f3e768d
