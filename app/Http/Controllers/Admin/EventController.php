@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class EventController extends Controller
+{
+    /**
+     * Menampilkan halaman kelola event (admin)
+     */
+    public function index()
+    {
+        return view('admin.events');
+    }
+}
