@@ -20,7 +20,7 @@
     <h1 class="text-xl font-bold mb-3">Kontak</h1>
 
     <div class="bg-white p-4 border">
-        <p>Email : carnelhafizh@email.com</p>
+        <p>Email : agafkrz@gmail.com</p>
     </div>
 </div>
 

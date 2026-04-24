@@ -20,9 +20,9 @@
     <h1 class="text-xl font-bold mb-3">Profil Praktikan</h1>
 
     <div class="bg-white p-4 border">
-        <p>Nama : Hafizh Carnel Setyanto</p>
-        <p>NIM : 24.12.3288</p>
-        <p>Jurusan : Sistem Informasi</p>
+        <p>Nama    : Gagah Ahmad Fakhriza</p>
+        <p>NIM     : 24.12.3289</p>
+        <p>Jurusan : S1 - Sistem Informasi</p>
     </div>
 </div>
 
