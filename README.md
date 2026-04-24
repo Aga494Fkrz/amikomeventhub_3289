@@ -7,3 +7,5 @@
 * **Kelas:** S104
 ---
 
+Link laravel cloud
+https://amikomeventhub-3289-main-du8nuw.free.laravel.cloud/
