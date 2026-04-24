@@ -1,10 +1,10 @@
 # Tugas 1 - Pemrograman Web
 
 **Identitas Mahasiswa:**
-* **Nama:** Hafizh Carnel Setyanto
-* **NIM:** 24.12.3288 
-* **Jurusan:** Sistem Informasi (SI04)
-
+* **Nama:** Gagah Ahmad Fakhriza
+* **NIM:** 24.12.3289
+* **Jurusan:** S1 - Sistem Informasi 
+* **Kelas:** S104
 ---
 
 ## Hasil Pengerjaan (Live Demo)
