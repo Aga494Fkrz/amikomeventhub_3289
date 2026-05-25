@@ -11,6 +11,7 @@ Link laravel cloud
 https://amikomeventhub-3289-main-du8nuw.free.laravel.cloud/
 
 Link Uts
+
 kelola kategori : https://amikomeventhub-3289-main-du8nuw.free.laravel.cloud/admin/categories
 
 patner : https://amikomeventhub-3289-main-du8nuw.free.laravel.cloud/admin/partners
