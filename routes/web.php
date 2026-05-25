@@ -42,8 +42,25 @@ Route::prefix('admin')->name('admin.')->group(function () {
     
     Route::get('/transactions', [TransactionController::class, 'index'])->name('transactions.index');
 });
-Route::get('/jalankan-migrasi-cloud', function() {
-    // Perintah ini akan memaksa Laravel Cloud menjalankan file migrasi penambahan kolom baru secara aman
-    \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
-    return "SKEMA DATABASE BERHASIL DIPERBARUI DI CLOUD!";
+    Route::get('/jalankan-migrasi-cloud', function() {
+    try {
+        // 1. Buat file database baru jika belum ada
+        $dbPath = database_path('database.sqlite');
+        if (!file_exists($dbPath)) {
+            touch($dbPath);
+        }
+
+        // 2. Bersihkan total skema database lama di cloud demi keamanan
+        \Illuminate\Support\Facades\Artisan::call('migrate:fresh', ['--force' => true]);
+
+        // 3. Paksa jalankan SQL mentah untuk menyuntikkan kolom category_id ke tabel partners
+        \Illuminate\Support\Facades\DB::statement('ALTER TABLE partners ADD COLUMN category_id INTEGER NULL');
+
+        // 4. Isi ulang data seeder kategori
+        \Illuminate\Support\Facades\Artisan::call('db:seed', ['--force' => true]);
+
+        return "BOOM! DATABASE SUKSES DIPAKSA UPDATE DAN SIAP PAKAI!";
+    } catch (\Exception $e) {
+        return "Gagal karena: " . $e->getMessage();
+    }
 });
