@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('category_id')->nullable(); // Kolom Kategori UTS
+            $table->string('name');                                // Kolom Nama Partner
+            $table->string('link')->nullable();                    // Kolom Link Website
+            $table->text('description')->nullable();               // Kolom Deskripsi
             $table->timestamps();
         });
     }
