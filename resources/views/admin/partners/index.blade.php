@@ -20,7 +20,7 @@
     <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
         <form action="{{ route('admin.partners.index') }}" method="GET" class="flex gap-3">
             <div class="flex-1 relative">
-                <input type="text" name="search" value="{{ request('search') }}" placeholder="Cari nama partner di sini..." class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-indigo-600 transition">
+                <input type="text" name="search" value="{{ $search ?? '' }}" placeholder="Cari nama partner di sini..." class="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-indigo-600 transition">
                 <div class="absolute left-3.5 top-3.5 text-slate-400">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -88,7 +88,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="4" class="px-6 py-10 text-center text-slate-400 font-medium">
+                            <td colspan="5" class="px-6 py-10 text-center text-slate-400 font-medium">
                                 Tidak ada data partner ditemukan.
                             </td>
                         </tr>
@@ -98,7 +98,7 @@
         </div>
         @if($partners->hasPages())
             <div class="p-6 border-t border-slate-100 bg-slate-50/50">
-                {{ $partners->links() }}
+                {{ $partners->appends(request()->query())->links() }}
             </div>
         @endif
     </div>

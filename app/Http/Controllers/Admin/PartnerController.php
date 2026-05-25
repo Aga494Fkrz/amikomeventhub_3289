@@ -9,11 +9,20 @@ use Illuminate\Http\Request;
 
 class PartnerController extends Controller
 {
-    public function index()
+    // ⬇️ BAGIAN INDEX INI SUDAH DI-UPDATE UNTUK FITUR PENCARIAN
+    public function index(Request $request)
     {
-        // Mengambil data partner beserta kategorinya untuk ditampilkan di halaman utama admin
-        $partners = Partner::with('category')->latest()->paginate(10);
-        return view('admin.partners.index', compact('partners'));
+        $search = $request->input('search');
+
+        $partners = Partner::with('category')
+            ->when($search, function ($query, $search) {
+                return $query->where('name', 'like', "%{$search}%")
+                             ->orWhere('link', 'like', "%{$search}%");
+            })
+            ->latest()
+            ->paginate(10);
+
+        return view('admin.partners.index', compact('partners', 'search'));
     }
 
     public function create()
