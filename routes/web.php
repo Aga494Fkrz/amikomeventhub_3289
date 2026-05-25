@@ -64,3 +64,15 @@ Route::prefix('admin')->name('admin.')->group(function () {
         return "Gagal karena: " . $e->getMessage();
     }
 });
+    Route::get('/final-reset-database', function() {
+    try {
+        // Memaksa sistem menjalankan migrate:fresh --seed di dalam server cloud
+        \Illuminate\Support\Facades\Artisan::call('migrate:fresh', [
+            '--seed' => true,
+            '--force' => true
+        ]);
+        return "SELAMAT! DATABASE LIVE BERHASIL DI-RESET DAN DI-SEED!";
+    } catch (\Exception $e) {
+        return "Gagal karena: " . $e->getMessage();
+    }
+});
