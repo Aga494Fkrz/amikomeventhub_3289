@@ -43,10 +43,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/transactions', [TransactionController::class, 'index'])->name('transactions.index');
 });
 Route::get('/jalankan-migrasi-cloud', function() {
-    // Kita tambahkan '--force' => true agar lolos pengamanan Production Laravel Cloud
-    \Illuminate\Support\Facades\Artisan::call('migrate:fresh', [
-        '--seed' => true,
-        '--force' => true
-    ]);
-    return "Database berhasil di-reset, di-seed, dan dipaksa update di Laravel Cloud!";
+    // Perintah ini akan memaksa Laravel Cloud menjalankan file migrasi penambahan kolom baru secara aman
+    \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
+    return "SKEMA DATABASE BERHASIL DIPERBARUI DI CLOUD!";
 });
